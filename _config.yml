@@ -1,0 +1,12 @@
+# Site settings
+title: Andy Onuki
+email: andy_onuki@acm.org
+description: > # this means to ignore newlines until "baseurl:"
+  This is the personal webpage of André "Andy" Onuki.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://meiao.github.io" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  meiao
+
+# Build settings
+markdown: kramdown

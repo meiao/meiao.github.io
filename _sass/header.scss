@@ -1,0 +1,90 @@
+$main-nav-width: 20%;
+$secondary-nav-width: 20%;
+$secondary-nav-color: #333;
+
+@keyframes blinking-cursor { /* CSS3 */
+  0%   { background-color: green; }
+  100%  { background-color: inherit; }
+}
+
+@media (min-width: 768px) {
+  nav.main-nav {
+    font-family: 'VT323';
+    font-size: 15pt;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: $main-nav-width;
+
+    .branding {
+      text-align: center;
+      font-size: xx-large;
+      margin-bottom: 50px;
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        color: green;
+        padding: 15px 15px;
+        position: relative;
+        text-align: right;
+
+        &.active:before {
+          content: ">";
+        }
+        &.active:after {
+          content: "\0000a0";
+          animation: 1s steps(start, end) 0s normal none infinite running blinking-cursor;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: inherit;
+        }
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-left: $main-nav-width + $secondary-nav-width ;
+  }
+}
+
+@media (min-width: 768px) {
+  nav.secondary-nav {
+    position: fixed;
+    left: $main-nav-width;
+    top: 0;
+    bottom:0;
+    width: $secondary-nav-width;
+    background-color: $secondary-nav-color;
+    color: white;
+    padding: 15px;
+    h2 {
+      font-size: large;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding: 10px 0;
+    }
+  }
+}
