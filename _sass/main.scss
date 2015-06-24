@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  main {
+    margin-left: $main-nav-width + $secondary-nav-width ;
+  }
+}
+
+main {
+  padding: 10px;
+}
+
+section {
+  margin: 10px 0;
+}
+
+main {
+  font-size: 12pt;
+}

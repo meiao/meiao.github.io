@@ -60,12 +60,6 @@ $secondary-nav-color: #333;
 }
 
 @media (min-width: 768px) {
-  main {
-    margin-left: $main-nav-width + $secondary-nav-width ;
-  }
-}
-
-@media (min-width: 768px) {
   nav.secondary-nav {
     position: fixed;
     left: $main-nav-width;
