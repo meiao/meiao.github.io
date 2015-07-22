@@ -1,19 +1,15 @@
 $main-background-color: #fff;
 
-main {
-  padding: 10px;
+body {
+  overflow: hidden;
 }
 
-section {
-  margin: 10px 0;
+#side-nav {
+  margin-left: 50px;
 }
 
-main {
-  font-size: 12pt;
-}
-
-#main-index {
-  header h1 {
-    font-size: 63px;
-  }
+#main-content {
+  margin-right: 50px;
+  height: 100%;
+  overflow-y: scroll;
 }

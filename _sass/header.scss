@@ -2,6 +2,7 @@ $nav-branding-height: 50px;
 $secondary-nav-color: #333;
 $secondary-nav-padding-left: 15px;
 $terminal-color: green;
+
 @keyframes blinking-cursor { /* CSS3 */
   0%   { background-color: green; }
   100%  { background-color: inherit; }
@@ -10,9 +11,11 @@ $terminal-color: green;
 @media (min-width: 768px) {
   nav.main-nav {
     font-family: 'VT323';
-    font-size: 15pt;
+    font-size: 32px;
     background-color: #000;
     color: $terminal-color;
+    padding-left: 15px;
+    padding-right: 15px;
 
     .branding {
       display: inline-block;
@@ -45,7 +48,5 @@ $terminal-color: green;
         }
       }
     }
-
   }
-
 }

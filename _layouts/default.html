@@ -6,8 +6,13 @@
   <body>
 
     {% include header.html %}
-    <main id="{% if page.categories contains 'main index' %}main-index{% endif %}">
-      {{ content }}
+    <main>
+      <div class="col-xs-hidden col-md-3" id="side-nav">
+        {% include side_nav.html%}
+      </div>
+      <div class="col-xs-12 col-md-9" id="main-content">
+        {{ content }}
+      </div>
     </main>
 
     {% include footer.html %}
