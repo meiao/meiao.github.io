@@ -1,16 +1,4 @@
 $main-background-color: #fff;
-$main-nav-width: 20%;
-$secondary-nav-width: 20%;
-
-@media (min-width: 768px) {
-  main {
-    margin-left: $main-nav-width + $secondary-nav-width;
-
-    &#main-index {
-      margin-left: $main-nav-width;
-    }
-  }
-}
 
 main {
   padding: 10px;

@@ -12,8 +12,13 @@
     </div>
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
+        {% for p in site.data.pages %}
+          <li class="{% if page.categories contains p %}active{% endif %}">
+            <a href="{{site.baseurl}}/{{p}}">
+              {{p}}
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

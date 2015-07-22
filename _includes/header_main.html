@@ -1,16 +1,35 @@
 <nav class="main-nav">
   <div class="branding">
-    <a href="{{site.baseurl}}/">Andy Onuki</a>
+    <a href="{{site.baseurl}}/">andy_onuki</a>:~/<!--
+    {% for p in site.data.pages %}
+      {% if page.categories contains p %}
+        -->{{p}}<!--
+      {% endif %}
+    {% endfor %}
+    -->$
   </div>
+
   <ul>
-    <li class="{% if page.categories contains 'about' %}active{% endif %}">
-      <a href="{{site.baseurl}}/about">About Me</a>
+    {% unless page.categories contains 'main' %}
+    <li>
+      <a href="{{site.baseurl}}/{{p}}">
+        cd ..
+      </a>
     </li>
-    <li class="{% if page.categories contains 'work' %}active{% endif %}">
-      <a href="{{site.baseurl}}/work">Work</a>
-    </li>
-    <li class="{% if page.categories contains 'volunteering' %}active{% endif %}">
-      <a href="{{site.baseurl}}/volunteering">Volunteering</a>
-    </li>
+    {% endunless %}
+
+    {% for p in site.data.pages %}
+      <li>
+        <a href="{{site.baseurl}}/{{p}}">
+          cd
+          {% unless page.categories contains 'main' %}
+            ../<!--
+          {% else %}
+            <!--
+          {% endunless %}
+          -->{{p}}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>

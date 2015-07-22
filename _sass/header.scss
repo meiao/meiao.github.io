@@ -1,7 +1,7 @@
 $nav-branding-height: 50px;
 $secondary-nav-color: #333;
 $secondary-nav-padding-left: 15px;
-
+$terminal-color: green;
 @keyframes blinking-cursor { /* CSS3 */
   0%   { background-color: green; }
   100%  { background-color: inherit; }
@@ -12,14 +12,10 @@ $secondary-nav-padding-left: 15px;
     font-family: 'VT323';
     font-size: 15pt;
     background-color: #000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: $main-nav-width;
+    color: $terminal-color;
 
     .branding {
+      display: inline-block;
       text-align: center;
       font-size: xx-large;
       min-height: $nav-branding-height;
@@ -27,22 +23,21 @@ $secondary-nav-padding-left: 15px;
         color: inherit;
         text-decoration: inherit;
       }
+      &:after {
+        content: "\0000a0";
+        animation: 1s steps(start, end) 0s normal none infinite running blinking-cursor;
+      }
     }
 
     ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      li {
-        color: green;
-        padding: 15px 15px;
-        position: relative;
-        text-align: right;
+      display: inline;
 
-        &.active:after {
-          content: "\0000a0";
-          animation: 1s steps(start, end) 0s normal none infinite running blinking-cursor;
-        }
+      li {
+        padding: 15px 15px;
+        display: inline-block;
 
         a {
           color: inherit;
@@ -53,54 +48,4 @@ $secondary-nav-padding-left: 15px;
 
   }
 
-}
-
-@media (min-width: 768px) {
-  nav.secondary-nav {
-    position: fixed;
-    left: $main-nav-width;
-    top: 0;
-    bottom:0;
-    width: $secondary-nav-width;
-    background-color: $secondary-nav-color;
-    color: white;
-
-    header {
-      margin-top: $nav-branding-height;
-    }
-
-    h2 {
-      font-size: large;
-      margin-top: 0;
-      padding: 0;
-      padding-left: $secondary-nav-padding-left;
-    }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      padding: 10px $secondary-nav-padding-left;
-      text-align: right;
-      position: relative;
-      &.active {
-        background-color: $main-background-color;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        &:after {
-          border-color: transparent #000 transparent transparent;
-          border-width: 5px;
-          height: 0;
-          width: 0;
-          position: absolute;
-          content:"";
-          top: 0;
-          right: -30px;
-          border-style: solid;
-        }
-      }
-
-    }
-  }
 }
