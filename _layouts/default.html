@@ -6,7 +6,7 @@
   <body>
 
     {% include header.html %}
-    <main>
+    <main id="{% if page.categories contains 'main index' %}main-index{% endif %}">
       {{ content }}
     </main>
 

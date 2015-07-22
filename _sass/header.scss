@@ -1,6 +1,6 @@
-$main-nav-width: 20%;
-$secondary-nav-width: 20%;
+$nav-branding-height: 50px;
 $secondary-nav-color: #333;
+$secondary-nav-padding-left: 15px;
 
 @keyframes blinking-cursor { /* CSS3 */
   0%   { background-color: green; }
@@ -22,8 +22,7 @@ $secondary-nav-color: #333;
     .branding {
       text-align: center;
       font-size: xx-large;
-      margin-bottom: 50px;
-
+      min-height: $nav-branding-height;
       a {
         color: inherit;
         text-decoration: inherit;
@@ -40,9 +39,6 @@ $secondary-nav-color: #333;
         position: relative;
         text-align: right;
 
-        &.active:before {
-          content: ">";
-        }
         &.active:after {
           content: "\0000a0";
           animation: 1s steps(start, end) 0s normal none infinite running blinking-cursor;
@@ -68,9 +64,16 @@ $secondary-nav-color: #333;
     width: $secondary-nav-width;
     background-color: $secondary-nav-color;
     color: white;
-    padding: 15px;
+
+    header {
+      margin-top: $nav-branding-height;
+    }
+
     h2 {
       font-size: large;
+      margin-top: 0;
+      padding: 0;
+      padding-left: $secondary-nav-padding-left;
     }
     ul {
       list-style-type: none;
@@ -78,7 +81,26 @@ $secondary-nav-color: #333;
       padding: 0;
     }
     li {
-      padding: 10px 0;
+      padding: 10px $secondary-nav-padding-left;
+      text-align: right;
+      position: relative;
+      &.active {
+        background-color: $main-background-color;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        &:after {
+          border-color: transparent #000 transparent transparent;
+          border-width: 5px;
+          height: 0;
+          width: 0;
+          position: absolute;
+          content:"";
+          top: 0;
+          right: -30px;
+          border-style: solid;
+        }
+      }
+
     }
   }
 }
