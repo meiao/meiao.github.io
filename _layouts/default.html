@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body data-spy="scroll" target="#side-nav">
 
-    {% include header.html %}
-    <main>
-      <div class="col-xs-hidden col-md-3" id="side-nav">
-        {% include side_nav.html%}
-      </div>
-      <div class="col-xs-12 col-md-9" id="main-content">
-        {{ content }}
-      </div>
-    </main>
+  {% include header.html %}
+  <main class="container">
+    <div class="col-xs-hidden" id="side-nav">
+      {% include side_nav.html%}
+    </div>
+    <div id="main-content">
+      {{ content }}
+    </div>
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+  <script type="text/javascript">
+  $('#side-nav').affix({
+    offset: {
+      top: function () {
+        return (this.top = $('#site-header').outerHeight(true))
+      }
+    }
+  });
+  </script>
+</body>
 
 </html>

@@ -1,15 +1,26 @@
 $main-background-color: #fff;
+$side-nav-width: 200px;
+$terminal-color: green;
+$terminal-bg-color: #000;
 
 body {
-  overflow: hidden;
+  position: relative;
 }
 
 #side-nav {
-  margin-left: 50px;
+  float: left;
+  width: $side-nav-width;
+  padding: 20px 0;
+  &.affix {
+    top: 0;
+  }
 }
 
 #main-content {
-  margin-right: 50px;
-  height: 100%;
-  overflow-y: scroll;
+  padding: 20px;
+  margin-left: $side-nav-width + 10px;
+}
+
+header.panel-heading h2 {
+  margin: 0;
 }

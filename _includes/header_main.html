@@ -2,7 +2,7 @@
   <div class="branding">
     <a href="{{site.baseurl}}/">andy_onuki</a>:~/<!--
     {% for p in site.data.pages %}
-      {% if page.categories contains p %}
+      {% if page.category == p %}
         -->{{p}}<!--
       {% endif %}
     {% endfor %}
@@ -10,7 +10,7 @@
   </div>
 
   <ul>
-    {% unless page.categories contains 'main' %}
+    {% unless page.category == 'main' %}
     <li>
       <a href="{{site.baseurl}}/{{p}}">
         cd ..
@@ -22,7 +22,7 @@
       <li>
         <a href="{{site.baseurl}}/{{p}}">
           cd
-          {% unless page.categories contains 'main' %}
+          {% unless page.category == 'main' %}
             ../<!--
           {% else %}
             <!--

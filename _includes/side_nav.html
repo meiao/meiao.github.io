@@ -1,1 +1,20 @@
-asdf
+{% case page.category %}
+{% when 'about' %}
+  {% assign menu = site.data.about %}
+{% when 'work' %}
+  {% assign menu = site.data.work %}
+{% when 'volunteering' %}
+  {% assign menu = site.data.volunteering %}
+{% endcase %}
+
+
+<div class="well">
+  {{menu.menu_description}}
+  <ul class="nav nav-tabs">
+    {% for place in menu.places %}
+      <li>
+        <a href="#{{place.id}}">{{place.name}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
