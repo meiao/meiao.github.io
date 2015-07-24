@@ -1,6 +1,5 @@
 ---
   menu_description: "I worked at these places"
-  page_description: ""
   places:
     - name: "Mindlin Library"
       id: "bbm"

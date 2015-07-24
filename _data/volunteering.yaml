@@ -1,6 +1,5 @@
 ---
-  menu_description: "I help at these places"
-  page_description: ""
+  menu_description: "I help these projects"
   places:
     - name: "Code for DC"
       url: "http://codefordc.org"
