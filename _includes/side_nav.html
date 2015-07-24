@@ -7,7 +7,7 @@
   {% assign menu = site.data.volunteering %}
 {% endcase %}
 
-
+{% unless page.category == 'main' %}
 <div class="well">
   {{menu.menu_description}}
   <ul class="nav nav-tabs">
@@ -18,3 +18,4 @@
     {% endfor %}
   </ul>
 </div>
+{% endunless %}

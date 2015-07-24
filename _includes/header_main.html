@@ -3,7 +3,7 @@
     <a href="{{site.baseurl}}/">andy_onuki</a>:~/<!--
     {% for p in site.data.pages %}
       {% if page.category == p %}
-        -->{{p}}<!--
+        --><a href="{{site.baseurl}}/{{p}}">{{p}}</a><!--
       {% endif %}
     {% endfor %}
     -->$
@@ -19,6 +19,7 @@
     {% endunless %}
 
     {% for p in site.data.pages %}
+      {% unless page.category == p %}
       <li>
         <a href="{{site.baseurl}}/{{p}}">
           cd
@@ -30,6 +31,7 @@
           -->{{p}}
         </a>
       </li>
+      {% endunless %}
     {% endfor %}
   </ul>
 </nav>

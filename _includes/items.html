@@ -1,0 +1,20 @@
+{% for item in items %}
+  <div id="{{item.id}}" class="panel panel-primary">
+    <header class="panel-heading">
+      <span class="pull-right">
+        <button class="btn btn-primary btn-sm" data-toggle="collapse" aria-expanded="true" data-target="#{{item.id}}-collapse" aria-controls="#{{item.id}}-collapse">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <button class="btn btn-danger btn-sm disabled">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+      </span>
+      <h2><a href="{{item.url}}">{{item.name}}</a></h2>
+    </header>
+    <div id="{{item.id}}-collapse" class="panel-collapse collapse in" role="tabpanel">
+      <div class="panel-body">
+        {{item.description}}
+      </div>
+    </div>
+  </div>
+{% endfor %}

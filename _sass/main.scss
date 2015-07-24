@@ -7,20 +7,28 @@ body {
   position: relative;
 }
 
-#side-nav {
-  float: left;
-  width: $side-nav-width;
-  padding: 20px 0;
-  &.affix {
-    top: 0;
+@media (min-width: 768px) {
+  #side-nav {
+    float: left;
+    width: $side-nav-width;
+    padding: 20px 0;
+    &.affix {
+      top: 0;
+    }
+  }
+
+  #main-content {
+    padding: 20px;
+    margin-left: $side-nav-width + 10px;
+  }
+}
+header.panel-heading h2 {
+  margin: 0;
+  a {
+    color: inherit;
   }
 }
 
-#main-content {
-  padding: 20px;
-  margin-left: $side-nav-width + 10px;
-}
-
-header.panel-heading h2 {
-  margin: 0;
+.glyphicon.glyphicon-minus {
+  top: 10px;
 }
