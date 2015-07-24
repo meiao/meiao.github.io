@@ -10,7 +10,14 @@
           <span class="glyphicon glyphicon-remove"></span>
         </button>
       </span>
-      <h2><a href="{{item.url}}">{{item.name}}</a></h2>
+      <h2>
+        {% if item.icon %}
+          <img src="{{site.baseurl}}{{item.icon}}" alt="{{item.name}} logo" class="favicon"/>
+        {% endif %}
+        <a href="{{item.url}}">
+        {{item.name}}
+        </a>
+      </h2>
     </header>
 
     <section id="{{item.id}}-collapse" class="panel-collapse collapse in" role="tabpanel">

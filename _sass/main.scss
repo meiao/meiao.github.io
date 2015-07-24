@@ -27,6 +27,10 @@ header.panel-heading h2 {
   a {
     color: inherit;
   }
+  .favicon {
+    max-height: 24px;
+    background-color: white;
+  }
 }
 
 .glyphicon.glyphicon-minus {
