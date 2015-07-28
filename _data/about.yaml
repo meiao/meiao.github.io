@@ -51,3 +51,35 @@
           Unfortunately, I lost most of the code for my solutions. Guess I will
           have to start solving them again.
         </section>
+    - name: "24 Projects"
+      id: "24projects"
+      url: "https://bitbucket.org/meiao/24projects/src/"
+      description: >
+        <section>
+          I have this repository on Bitbucket that I wrote a few sorting
+          algorithms. The main goal was to write parallel sorting algorithms. I
+          did write parallel versions of merge sort and of quicksort and also
+          many exoteric algorithms like bogosort. I experimented with merge sort
+          regarding number of threads and use of other sort algorithms when the
+          array was small enough. Right now in the repository only the parallel
+          quicksort remains, but the code for others can be viewed on older
+          commits.
+        </section>
+        <section>
+          I wrote an abstraction to simplify the algorithms and make them work
+          with any kind of primitive or object. This is probably much slower
+          than the implementation in java.util.Arrays. But Arrays did not had a
+          parallel sort implementation until Java 8.
+        </section>
+        <section>
+          Besides writing the parallel algorithms I wanted to write the methods
+          only once, differently from Arrays implementation that has one
+          implementation for each data type. I understand that having multiple
+          implementations for each data type has its benefits. For instance you
+          do not need a stable sorting algorithm to sort integers. You may want
+          a stable one if you are sorting an object based on an integer value,
+          though.
+        </section>
+        <section>
+          In the future I may add other parallel algorithms to this project.
+        </section>
