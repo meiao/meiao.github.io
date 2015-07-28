@@ -51,6 +51,8 @@ section {
   text-indent: 0;
 }
 
-section + section {
-  text-indent: 1.5em;
+.panel-body {
+  section + section {
+    text-indent: 1.5em;
+  }
 }
