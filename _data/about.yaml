@@ -1,0 +1,53 @@
+---
+  menu_description: "I like these things"
+  places:
+    - name: "Project Euler"
+      url: "https://projecteuler.net"
+      id: "projecteuler"
+      icon: "/images/favicon_projecteuler.ico"
+      description: >
+        <section>
+          Project Euler (PE) has many (usually) math related problems that require
+          a lot of computation and can not be solved by hand (mostly). Some only
+          require the computer's brute force capabilities. Other require more
+          complex algorithms or math deduction, specially if you want your
+          computer to resolve them in a timely manner.
+        </section>
+        <section>
+          I have been solving problems on PE since after I took a
+          "Programming Challenges" course in college. I stopped working on it
+          for a while, but resumed recently.
+        </section>
+        <section>
+          Each problem recieves a number as answer and so PE is programming
+          language agnostic. I use Ruby to write the solutions.
+        </section>
+        <section>
+          On my badge (below) you can see how many problems I have solved and if
+          you want to add me as a friend, my key is
+          "182577_c44298b6cf815eb0b9dbf1cc486573ba". I have a private Bitbucket
+          repository where I store my solutions. If you would like to see them,
+          contact me and I can either open the repository or send an individual
+          program.
+        </section>
+        <section class="text-center">
+          <img src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge"/>
+        </section>
+
+    - name: "ACM Online Judge"
+      id: "acm-online-judege"
+      description: >
+        <section>
+          ACM Online Judge (ACM OJ) is very similar to PE, but its problems are
+          (usually) based on computer science theory instead of math.
+          So in ACM OJ a different data structure may make all the difference.
+        </section>
+        <section>
+          Another difference is that you send your code and the ACM OJ will
+          compile and run your code. So it is more selective about programming
+          languages. I wrote most of my solutions in ANSI C and a couple in C++.
+        </section>
+        <section>
+          Unfortunately, I lost most of the code for my solutions. Guess I will
+          have to start solving them again.
+        </section>

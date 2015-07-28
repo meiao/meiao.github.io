@@ -5,6 +5,15 @@ $terminal-bg-color: #000;
 
 body {
   position: relative;
+
+  main {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif, Arial;
+  }
+}
+
+#main-content>section {
+  margin: 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -22,6 +31,7 @@ body {
     margin-left: $side-nav-width + 10px;
   }
 }
+
 header.panel-heading h2 {
   margin: 0;
   a {
@@ -35,4 +45,12 @@ header.panel-heading h2 {
 
 .glyphicon.glyphicon-minus {
   top: 10px;
+}
+
+section {
+  text-indent: 0;
+}
+
+section + section {
+  text-indent: 1.5em;
 }
