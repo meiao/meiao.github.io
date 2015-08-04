@@ -43,16 +43,22 @@ header.panel-heading h2 {
   }
 }
 
-.glyphicon.glyphicon-minus {
-  top: 10px;
-}
-
 section {
   text-indent: 0;
 }
 
-.panel-body {
-  section + section {
-    text-indent: 1.5em;
+.item {
+
+  .glyphicon.glyphicon-minus {
+    top: 10px;
+  }
+
+  .panel-body {
+    max-height: 500px;
+    overflow-y: auto;
+
+    section + section {
+      text-indent: 1.5em;
+    }
   }
 }
