@@ -6,8 +6,27 @@
       url: "http://bbm.usp.br"
       icon: "/images/favicon_bbm.ico"
       description: >
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.</p>
+        <section>
+          University of São Paulo's newest library houses books about Brazil.
+          Among its volumes there is one original copy of a book written by
+          Hans Staden in 1557.
+        </section>
+        <section>
+          Using Atiz and Kirtas book scanners the books are digitized for
+          preservation. The preservation copies are then treated and result in
+          smaller access copies which are available at their
+          <a href="http://www.brasiliana.usp.br/bbd/">digital library</a>.
+        </section>
+        <section>
+          My work there was to maintain the existing digital library while
+          developing a new version. The new version of the library was ready by the
+          time I left, but it is not up because of infrastructure problems.
+        </section>
+        <section>
+          Besides that I also helped develop the work flow and intern management
+          system. And since the library does not have a large team I installed
+          and configured the web servers using Puppet.
+        </section>
     - name: "Touch Tecnologia"
       id: "touch"
       url: "http://www.touchhealth.com.br"
