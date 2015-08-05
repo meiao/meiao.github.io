@@ -6,80 +6,23 @@
       id: "projecteuler"
       icon: "/images/favicon_projecteuler.ico"
       description: >
-        <section>
-          Project Euler (PE) has many (usually) math related problems that require
-          a lot of computation and can not be solved by hand (mostly). Some only
-          require the computer's brute force capabilities. Other require more
-          complex algorithms or math deduction, specially if you want your
-          computer to resolve them in a timely manner.
+        <section class="col-xs-2">
+          <img src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge" />
         </section>
-        <section>
-          I have been solving problems on PE since after I took a
-          "Programming Challenges" course in college. I stopped working on it
-          for a while, but resumed recently.
+        <section class="col-xs-10">
+          Project Euler (PE) has many problems that require a lot of math and
+          can be algorithmically solved.
         </section>
-        <section>
-          Each problem recieves a number as answer and so PE is programming
-          language agnostic. I use Ruby to write the solutions.
-        </section>
-        <section>
-          On my badge (below) you can see how many problems I have solved and if
-          you want to add me as a friend, my key is
-          "182577_c44298b6cf815eb0b9dbf1cc486573ba". I have a private Bitbucket
-          repository where I store my solutions. If you would like to see them,
-          contact me and I can either open the repository or send an individual
-          program.
-        </section>
-        <section class="text-center">
-          <img src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge"/>
-        </section>
-
     - name: "ACM Online Judge"
       id: "acm-online-judege"
       description: >
         <section>
-          ACM Online Judge (ACM OJ) is very similar to PE, but its problems are
-          (usually) based on computer science theory instead of math.
-          So in ACM OJ a different data structure may make all the difference.
-        </section>
-        <section>
-          Another difference is that you send your code and the ACM OJ will
-          compile and run your code. So it is more selective about programming
-          languages. I wrote most of my solutions in ANSI C and a couple in C++.
-        </section>
-        <section>
-          Unfortunately, I lost most of the code for my solutions. Guess I will
-          have to start solving them again.
+          I have also solved many problems on ACM Online Judge.
         </section>
     - name: "24 Projects"
       id: "24projects"
       url: "https://bitbucket.org/meiao/24projects/src/"
       description: >
         <section>
-          I have this repository on Bitbucket that I wrote a few sorting
-          algorithms. The main goal was to write parallel sorting algorithms. I
-          did write parallel versions of merge sort and of quicksort and also
-          many exoteric algorithms like bogosort. I experimented with merge sort
-          regarding number of threads and use of other sort algorithms when the
-          array was small enough. Right now in the repository only the parallel
-          quicksort remains, but the code for others can be viewed on older
-          commits.
-        </section>
-        <section>
-          I wrote an abstraction to simplify the algorithms and make them work
-          with any kind of primitive or object. This is probably much slower
-          than the implementation in java.util.Arrays. But Arrays did not had a
-          parallel sort implementation until Java 8.
-        </section>
-        <section>
-          Besides writing the parallel algorithms I wanted to write the methods
-          only once, differently from Arrays implementation that has one
-          implementation for each data type. I understand that having multiple
-          implementations for each data type has its benefits. For instance you
-          do not need a stable sorting algorithm to sort integers. You may want
-          a stable one if you are sorting an object based on an integer value,
-          though.
-        </section>
-        <section>
-          In the future I may add other parallel algorithms to this project.
+          This is repository where I store the parallel algorithms I write.
         </section>
