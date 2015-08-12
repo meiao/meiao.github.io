@@ -10,22 +10,15 @@
           University of São Paulo's newest library houses books about Brazil.
           Among its volumes there is one original copy of a book written by
           Hans Staden in 1557.
-        </section>
-        <section>
-          Using Atiz and Kirtas book scanners the books are digitized for
+          Using specialized book scanners the books are digitized for
           preservation. The preservation copies are then treated and result in
           smaller access copies which are available at their
           <a href="http://www.brasiliana.usp.br/bbd/">digital library</a>.
         </section>
         <section>
-          My work there was to develop a new version of the digital library. The
-          new version of the library was ready by the time I left, but it is not
-          up because of infrastructure problems.
-        </section>
-        <section>
-          Besides that I also helped develop the work flow and intern management
-          system. And since the library does not have a large team I installed
-          and configured the web servers using Puppet.
+          I developed a new version of their digital library. The new version
+          was ready by the time I left, but it is not up because of
+          infrastructure problems.
         </section>
     - name: "Touch Tecnologia"
       id: "touch"
@@ -41,5 +34,5 @@
         </section>
         <section>
           More information at the
-          <a href="http://www.touchhealth.com.br/solucoes/diagnosticos-por-imagem/">product's website</a>.
+          <a href="http://www.inovapar.com.br/en/products/clirea-art#.VcLDNMBVjfQ">product's website</a>.
         </section>

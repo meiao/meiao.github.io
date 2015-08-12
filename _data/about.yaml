@@ -6,10 +6,10 @@
       id: "projecteuler"
       icon: "/images/favicon_projecteuler.ico"
       description: >
-        <section class="col-xs-2">
-          <img src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge" />
+        <section class="col-xs-3">
+          <img id="euler-badge" src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge" />
         </section>
-        <section class="col-xs-10">
+        <section class="col-xs-9">
           Project Euler (PE) has many problems that require a lot of math and
           can be algorithmically solved.
         </section>
@@ -24,5 +24,6 @@
       url: "https://bitbucket.org/meiao/24projects/src/"
       description: >
         <section>
-          This is repository where I store the parallel algorithms I write.
+          I store the parallel algorithms I write in this repository. Not much
+          to see now, just an example of how I code.
         </section>
