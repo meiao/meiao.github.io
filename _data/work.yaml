@@ -1,6 +1,17 @@
 ---
   menu_description: "I worked at these places"
   places:
+    - name: "Brazen Technologies"
+      id: "brazen"
+      url: "https://brazen.com"
+      icon: "/images/favicon_brazen.png"
+      description: >
+        <section>
+          Brazen provides virtual events, not entirely unlike virtual career fairs for both enterprise and higher education customers.
+        </section>
+        <section>
+          My most notable contributions were the core of the Chat Bot and being part of the team that included video to the application.
+        </section>
     - name: "Mindlin Library"
       id: "bbm"
       url: "https://bbm.usp.br"
@@ -35,15 +46,4 @@
         <section>
           More information at the
           <a href="http://www.inovapar.com.br/en/products/clirea-art#.VcLDNMBVjfQ">product's website</a>.
-        </section>
-    - name: "Brazen Technologies"
-      id: "brazen"
-      url: "https://brazen.com"
-      icon: "/images/favicon_brazen.png"
-      description: >
-        <section>
-          Brazen provides virtual events, not entirely unlike virtual career fairs for both enterprise and higher education customers.
-        </section>
-        <section>
-          My most notable contributions were the core of the Chat Bot and being part of the team that included video to the application.
         </section>
