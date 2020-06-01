@@ -1,6 +1,23 @@
 ---
   menu_description: "I like these things"
   places:
+    - name: "What am I up to?"
+      id: "whatiamupto"
+      description: >
+       <section>
+         <p>
+           Right now I am teaching myself Rust, to use it to create SPAs using WebAssembly.
+         </p>
+         <p>
+           Why you ask?
+           <br/>
+           Why not? And just to add insult to injury, I am using WebComponents.
+         </p>
+         <p>
+           The project is an RPG game based on Pathfinder 1 rules, since I have no one to play with.
+           It is in early stages of development.
+         </p>
+       </section>
     - name: "Project Euler"
       url: "https://projecteuler.net"
       id: "projecteuler"
