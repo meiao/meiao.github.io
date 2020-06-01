@@ -3,8 +3,7 @@ $secondary-nav-color: #333;
 $secondary-nav-padding-left: 15px;
 
 @keyframes blinking-cursor { /* CSS3 */
-  0%   { background-color: green; }
-  100%  { background-color: inherit; }
+  50%  { opacity: 0.0; }
 }
 
 @media (min-width: 768px) {
@@ -27,7 +26,8 @@ $secondary-nav-padding-left: 15px;
       }
       &:after {
         content: "\0000a0";
-        animation: 1s steps(start, end) 0s normal none infinite running blinking-cursor;
+        animation: blinking-cursor 1s step-start 0s infinite;
+        background-color: green;
       }
     }
 

@@ -3,7 +3,7 @@
   places:
     - name: "Mindlin Library"
       id: "bbm"
-      url: "http://bbm.usp.br"
+      url: "https://bbm.usp.br"
       icon: "/images/favicon_bbm.ico"
       description: >
         <section>
@@ -13,7 +13,7 @@
           Using specialized book scanners the books are digitized for
           preservation. The preservation copies are then treated and result in
           smaller access copies which are available at their
-          <a href="http://www.brasiliana.usp.br/bbd/">digital library</a>.
+          <a href="https://digital.bbm.usp.br/">digital library</a>.
         </section>
         <section>
           I developed a new version of their digital library. The new version
@@ -22,7 +22,7 @@
         </section>
     - name: "Touch Tecnologia"
       id: "touch"
-      url: "http://www.touchhealth.com.br"
+      url: "https://www.touchhealth.com.br"
       icon: "/images/favicon_touch.png"
       description: >
         <section>
@@ -35,4 +35,15 @@
         <section>
           More information at the
           <a href="http://www.inovapar.com.br/en/products/clirea-art#.VcLDNMBVjfQ">product's website</a>.
+        </section>
+    - name: "Brazen Technologies"
+      id: "brazen"
+      url: "https://brazen.com"
+      icon: "/images/favicon_brazen.png"
+      description: >
+        <section>
+          Brazen provides virtual events, not entirely unlike virtual career fairs for both enterprise and higher education customers.
+        </section>
+        <section>
+          My most notable contributions were the core of the Chat Bot and being part of the team that included video to the application.
         </section>
