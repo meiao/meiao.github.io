@@ -10,6 +10,12 @@ body {
     font-size: 20px;
     font-family: Helvetica, sans-serif, Arial;
   }
+
+  .h1, .h2, .h3, h1, h2, h3 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+
 }
 
 #main-content>section + section{

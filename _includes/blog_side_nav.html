@@ -1,0 +1,10 @@
+<div class="well">
+  Post categories
+  <ul class="nav nav-tabs">
+    {% for category in site.categories %}
+      <li>
+        <a href="/category/{{ category[0] }}#VTNC">{{ category[0] | capitalize}} ({{ category[1].size }})</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

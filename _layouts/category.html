@@ -1,0 +1,21 @@
+---
+layout: blog
+---
+
+<div class="category-list">
+    <h1>Posts about {{ page.tag }}</h1>
+
+    <section class="post-list">
+      {% for post in site.categories[page.tag] %}
+      <div class="post-list-item">
+        <header>
+        <a href="{{post["id"]}}">{{post["title"]}}</a>
+        <span class="date">{{ post["date"] | date_to_string}}</span>
+        </header>
+        <section class="excerpt">
+          {{post["excerpt"]}}
+        </section>
+      </div>
+      {% endfor %}
+    </section>
+</div>

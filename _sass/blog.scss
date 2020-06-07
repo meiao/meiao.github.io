@@ -1,0 +1,18 @@
+.post-list {
+  max-width: 600px;
+  .post-list-item {
+    margin-bottom: 20px;
+    header {
+      margin-bottom: 10px;
+      .date {
+        float: right;
+      }
+    }
+
+    section.excerpt {
+      font-size: medium;
+    }
+  }
+
+
+}

@@ -10,3 +10,4 @@ github_username:  meiao
 
 # Build settings
 markdown: kramdown
+highlither: rouge

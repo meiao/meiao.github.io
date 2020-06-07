@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body data-spy="scroll" target="#side-nav">
+
+  {% include header.html %}
+  <main class="container">
+    <div class="hidden-xs" id="side-nav">
+      {% include blog_side_nav.html%}
+    </div>
+    <div id="main-content">
+      {{ content }}
+    </div>
+  </main>
+
+  {% include footer.html %}
+
+  <script type="text/javascript">
+  $('#side-nav').affix({
+    offset: {
+      top: function () {
+        return (this.top = $('#site-header').outerHeight(true))
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>
