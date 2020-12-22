@@ -1,0 +1,20 @@
+  - sub_cat: "about"
+    cat: "about"
+
+  - sub_cat: "work"
+    cat: "work"
+
+  - sub_cat: "volunteering"
+    cat: "volunteering"
+
+  - sub_cat: "blog"
+    cat: "blog"
+
+  - sub_cat: "coding"
+    cat: "blog"
+
+  - sub_cat: "java"
+    cat: "blog"
+
+  - sub_cat: "servers"
+    cat: "blog"

@@ -6,18 +6,30 @@
       description: >
        <section>
          <p>
-           Right now I am teaching myself Rust, to use it to create SPAs using WebAssembly.
-         </p>
-         <p>
-           Why you ask?
-           <br/>
-           Why not? And just to add insult to injury, I am using WebComponents.
-         </p>
-         <p>
-           The project is an RPG game based on Pathfinder 1 rules, since I have no one to play with.
-           It is in early stages of development.
+           Right now I am teaching myself Rust and Vue, mostly for Size Matters.
          </p>
        </section>
+    - name: "Size Matters"
+      url: "https://sizematters.dev"
+      id: "sizematters"
+      description: >
+        <section>
+          <p>
+            Size Matters is a poker planning tool for Scrum's refining sessions.
+          </p>
+          <p>
+            I got tired of my boss always asking if we were ready to size and counting before we threw some finger in the air.
+            So I decided there has got to be a better way.
+          </p>
+          <p>
+            Since I was already learning Rust, I decided to use it. I wanted to use Websockets to create a very dynamic site,
+            and found a the <a href="https://github.com/actix/actix">Actix</a> actor framework that allows you to easily
+            create a site that uses Websockets and actors for concurrency.
+          </p>
+          <p>
+            The UI is written in VUE using a Material Design like library.
+          </p>
+        </section>
     - name: "Project Euler"
       url: "https://projecteuler.net"
       id: "projecteuler"
@@ -27,8 +39,23 @@
           <img id="euler-badge" src="http://projecteuler.net/profile/meiao.png" alt="Project Euler badge" />
         </section>
         <section class="col-xs-9">
-          Project Euler (PE) has many problems that require a lot of math and
+          Project Euler has many problems that require a lot of math and
           can be algorithmically solved.
+        </section>
+    - name: "Advent of Code"
+      url: "https://adventofcode.com"
+      id: "advent-of-code"
+      icon: "/images/favicon_adventofcode.ico"
+      description: >
+        <section>
+          <p>
+            Very similar to Project Euler, but works as an advent calendar providing a problem every day in December until Christmas.
+            <br/>
+            Most problems are on the easier side, compared to Project Euler, but still challenging.
+          </p>
+          <p>
+            Since there are spoilers in Reddit, I decided to post my reasoning to each problem in my <a href="/category/coding">blog</a>.
+          </p>
         </section>
     - name: "ACM Online Judge"
       id: "acm-online-judege"
@@ -43,4 +70,18 @@
         <section>
           I store the parallel algorithms I write in this repository. Not much
           to see now, just an example of my code.
+        </section>
+    - name: "Ruins and Raiders (on hold)"
+      id: "ruins-n-raiders"
+      description: >
+        <section>
+          <p>
+            Ruins and Raiders is an RPG game based on Pathfinder 1 rules. I decided to write an RPG game since I have no one to play with.
+            <br/>
+            The rules are being written in Rust. The idea is to first make it into a browser game, compiling the rules into WebAssembly
+            and using some Rust web framework. Then step 2 is to make it into a MUD, which realisticly won't happen.
+          </p>
+          <p>
+            This project is on hold in favor of Size Matters.
+          </p>
         </section>

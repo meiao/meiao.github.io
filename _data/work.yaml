@@ -10,7 +10,9 @@
           Brazen provides virtual events, not entirely unlike virtual career fairs, for both enterprise and higher education customers.
         </section>
         <section>
-          My most notable contributions were the Chat Bot and including video to the application.
+          Among my contributions are the Chat Bot and including video to the application.<br/>
+          I also helped improve the performance of the application greatly increasing the number of concurrent users.<br/>
+          And currently I am working on the i18n of the UI and emails.
         </section>
     - name: "Mindlin Library"
       id: "bbm"

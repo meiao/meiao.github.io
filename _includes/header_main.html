@@ -1,9 +1,9 @@
 <nav class="main-nav">
   <div class="branding">
     <a href="{{site.baseurl}}/">andre_onuki</a>:~/<!--
-    {% for p in site.data.pages %}
-      {% if page.category == p %}
-        --><a href="{{site.baseurl}}/{{p}}">{{p}}</a><!--
+    {% for c in site.data.sub_category %}
+      {% if page.category == c.sub_cat %}
+        --><a href="{{site.baseurl}}/{{c.cat}}">{{c.cat}}</a><!--
       {% endif %}
     {% endfor %}
     -->$
