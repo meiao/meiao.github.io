@@ -79,7 +79,7 @@
             Ruins and Raiders is an RPG game based on Pathfinder 1 rules. I decided to write an RPG game since I have no one to play with.
             <br/>
             The rules are being written in Rust. The idea is to first make it into a browser game, compiling the rules into WebAssembly
-            and using some Rust web framework. Then step 2 is to make it into a MUD, which realisticly won't happen.
+            and using some Rust web framework. Then step 2 is to make it into a MUD, which realistically won't happen.
           </p>
           <p>
             This project is on hold in favor of Size Matters.
