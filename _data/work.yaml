@@ -1,6 +1,20 @@
 ---
   menu_description: "I work(ed) at these places"
   places:
+    - name: "New Relic"
+      id: "new_relic"
+      url: "https://newrelic.com"
+      icon: "/images/favicon_newrelic.ico"
+      description: >
+        <section>
+          New Relic One is an observability platform built to help engineers create more perfect software.
+        </section>
+        <section>
+          I am joining the Java Agent team to improve it and also instrument popular frameworks so you can see how your application is behaving.<br/>
+        </section>
+        <section>
+          Right now I am working to make the Java Agent installation effortless.
+        </section>
     - name: "Brazen Technologies"
       id: "brazen"
       url: "https://brazen.com"
@@ -12,7 +26,9 @@
         <section>
           Among my contributions are the Chat Bot and including video to the application.<br/>
           I also helped improve the performance of the application greatly increasing the number of concurrent users.<br/>
-          And currently I am working on the i18n of the UI and emails.
+        </section>
+        <section>
+          Also was part of the team that did the i18n of the UI and emails.
         </section>
     - name: "Mindlin Library"
       id: "bbm"
